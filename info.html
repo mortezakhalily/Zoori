@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoori</title>
     <link rel="stylesheet" href="style.css">
+    <!-- <style>table, th, td {border: 10px solid red;}</style> -->
     <script></script>
 </head>
 <body>
@@ -33,7 +34,7 @@
                 <li>ابرام</li>
                 <li>اصرار</li>
             </ul>
-            <ol> لیست مزایا
+            <ol start="10" type="A"> لیست مزایا
                 <li>اقدام</li>
                 <li>ابراز</li>
                 <li>نتیجه</li>
@@ -41,14 +42,19 @@
             <dl>
                 <dt>عنوان</dt>
                 <dd>زیرعنوان</dd>
+                <dd>۲زیرعنوان</dd>
+                <dd>۳زیرعنوان</dd>
+                <dd>۴زیرعنوان</dd>
+                <dt>عنوان دوم</dt>
+                <dd>زیرعنوان جدید</dt>
 
             </dl>
     </div>
 <hr>
     <div> <strong>لینک دهی</strong>
-        <h1><a href="https://google.com" target="_blank">گوگل</a></h1>
-        <h2><a href="Pages/new page.html">صفحه بعد</a> </h2>
-        <h3><a href="#end">انتهای صفحه</a></h3>
+        <h1><a href="https://google.com" target="_blank" title="google">گوگل</a></h1>
+        <h2><a href="Pages/new page.html" title="next page">صفحه بعد</a> </h2>
+        <h3><a href="#end" title="end of page">انتهای صفحه</a></h3>
 
     </div>
     <div>
@@ -79,22 +85,31 @@
 
 <div>
     <table>
-        <caption> جدول </caption>
-        <tr>
-            <th colspan="5">ستون اول</th>
-            <th colspan="2">ستون دوم</th>
+        <caption> برنامه هفتگی </caption>
+        <tr >
+            <th style="width:100px; height:40px;">ستون اول</th>
+            <th colspan="2" rowspan="1">ستون دوم</th>
+            <th >ستون سوم</th>
+            <th >ستون چهارم</th>
+            <th >ستون پنجم</th>
         </tr>
         <tr>
-            <td rowspan="7">ورزش</td>
-            <td>قرآن</td>
+            <td >ورزش</td>
+            <td >ریاضی</td>
+            <td >فیزیک</td>
+            <td >قرآن</td>
         </tr>
         <tr>
-            <td colspan="8">زبان</td>
-            <td>قرآن</td>
+            <td>زبان</td>
+            <td>ادبیات</td>
+            <td>علوم</td>
+            <td>جغرافی</td>
+            <td style="width:100px; height:40px;">ادبیات</td>
         </tr>
     </table>
 </div>
 <hr>
-    <footer id="end" href="#top">پایان</footer>
+    <footer id="end">پایان</footer>
+    <a href="#top">بازگشت به اول صفحه</a>
 </body>
 </html>
